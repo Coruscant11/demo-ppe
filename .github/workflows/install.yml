@@ -17,4 +17,6 @@ jobs:
 
       - run: echo "hello"
 
-      - run: echo "Hello World!"
+      - uses: mscoutermarsh/cowsays-action@v1
+        with:
+          text: "Hello World"
