@@ -15,4 +15,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - run: ./echo.sh
+      - run: echo "hello"
+
+      - uses: mscoutermarsh/cowsays-action@v1
+        with:
+          text: "Hello World"
